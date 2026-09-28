@@ -537,6 +537,57 @@
             </div>
         </section>
 
+        <!--=============== WEB PROJECTS ===============-->
+        <style>
+            .webp__container{grid-template-columns:repeat(auto-fit,minmax(260px,340px));justify-content:center;gap:1.5rem}
+            .webp__card{background:var(--container-color,#fff);border-radius:1rem;padding:.75rem .75rem 1.25rem;box-shadow:0 2px 12px rgba(0,0,0,.12);transition:transform .3s}
+            .webp__card:hover{transform:translateY(-4px)}
+            .webp__preview{height:170px;border-radius:.75rem;margin-bottom:1rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;color:#fff;text-align:center}
+            .webp__preview i{font-size:3rem}
+            .webp__preview span{font-size:.8rem;letter-spacing:.08em;opacity:.9}
+            .webp__preview--360{background:radial-gradient(circle at 30% 30%,#3a7bd5,#0b1a3a)}
+            .webp__preview--gallery{background:linear-gradient(135deg,#f5a623,#c2185b 55%,#2b1055)}
+            .webp__title{font-size:1.1rem;margin-bottom:.4rem;color:var(--title-color,inherit)}
+            .webp__desc{font-size:.85rem;margin-bottom:.8rem;color:var(--text-color,inherit)}
+            .webp__tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
+            .webp__tags span{font-size:.7rem;padding:.2rem .6rem;border-radius:1rem;background:rgba(127,127,127,.15);color:var(--text-color,inherit)}
+            .webp__button{display:inline-flex;align-items:center;gap:.25rem;font-size:.9rem;font-weight:500;color:var(--first-color,#5b6cff)}
+            .webp__button i{transition:transform .3s}
+            .webp__button:hover i{transform:translateX(.25rem)}
+        </style>
+        <section class="webp section" id="web-projects">
+            <span class="section__subtitle">Live on the web</span>
+            <h2 class="section__title">Website Projects</h2>
+
+            <div class="webp__container container grid">
+                <div class="webp__card">
+                    <div class="webp__preview webp__preview--360">
+                        <i class='bx bx-globe'></i>
+                        <span>360.zeelladani.in</span>
+                    </div>
+                    <h3 class="webp__title">360° Photo Space</h3>
+                    <p class="webp__desc">An immersive 360° panorama viewer with Tiny Planet view, auto-rotate, zoom and fullscreen modes.</p>
+                    <div class="webp__tags"><span>360° Viewer</span><span>Panorama</span><span>Interactive</span></div>
+                    <a href="https://360.zeelladani.in" target="_blank" rel="noopener" class="webp__button">
+                        Visit Website <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+
+                <div class="webp__card">
+                    <div class="webp__preview webp__preview--gallery">
+                        <i class='bx bx-images'></i>
+                        <span>images.zeelladani.in</span>
+                    </div>
+                    <h3 class="webp__title">Atelier — Random Acts of Light</h3>
+                    <p class="webp__desc">A living image mosaic where frames swap using fourteen random transitions, with slideshow and lightbox controls.</p>
+                    <div class="webp__tags"><span>Gallery</span><span>Animations</span><span>Slideshow</span></div>
+                    <a href="https://images.zeelladani.in" target="_blank" rel="noopener" class="webp__button">
+                        Visit Website <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- Project Details Modals -->
         <div class="project-modal" id="home-automation-modal">
             <div class="project-modal-content">
